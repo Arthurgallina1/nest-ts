@@ -7,6 +7,6 @@ export const typeOrmConfig: TypeOrmModuleOptions = {
   username: 'postgres',
   password: 'postgres',
   database: 'postgres',
-  entities: [__dirname + '/../**/*.entity.ts'], //any file that ends with entity.ts
+  entities: [__dirname + '/../**/*.entity.{js,ts}'], //any file that ends with entity.ts
   synchronize: true, //sync up with schemas (not use in prod)
 };
